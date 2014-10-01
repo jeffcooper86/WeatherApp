@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let forecastUrl = "https://api.forecast.io/forecast/" + apiKey + "37.8267,-122.423"
+        let forecastUrl = "https://api.forecast.io/forecast/" + apiKey + "38.907575, -77.038034"
     }
 
     override func didReceiveMemoryWarning() {
