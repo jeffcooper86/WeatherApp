@@ -24,7 +24,8 @@ class ViewController: UIViewController {
                 let dataObject = NSData(contentsOfURL: location)
                 let weatherDictionary: NSDictionary = NSJSONSerialization.JSONObjectWithData(
                     dataObject, options: nil, error: nil) as NSDictionary
-                println(weatherDictionary)
+                let currentWeather = Current(weatherDictionary: weatherDictionary)
+                println(currentWeather.currentTime!)
             }
         })
         downloadTask.resume()
