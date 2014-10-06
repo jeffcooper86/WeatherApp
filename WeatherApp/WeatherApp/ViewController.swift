@@ -18,9 +18,15 @@ class ViewController: UIViewController {
         
         let sharedSession = NSURLSession.sharedSession()
         let downloadTask: NSURLSessionDownloadTask =
-        sharedSession.downloadTaskWithURL(forecastURL, completionHandler: { (location: NSURL!, response: NSURLResponse!, error: NSError!) -> Void in
-                println(response)
-            })
+        sharedSession.downloadTaskWithURL(forecastURL, completionHandler: { (location: NSURL!,
+            response: NSURLResponse!, error: NSError!) -> Void in
+            if (error == nil) {
+                let dataObject = NSData(contentsOfURL: location)
+                let weatherDictionary: NSDictionary = NSJSONSerialization.JSONObjectWithData(
+                    dataObject, options: nil, error: nil) as NSDictionary
+                println(weatherDictionary)
+            }
+        })
         downloadTask.resume()
     }
 
