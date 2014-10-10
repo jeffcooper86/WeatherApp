@@ -26,13 +26,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFt-Da-djV">
                                 <rect key="frame" x="39" y="486" width="56" height="17"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <color key="textColor" red="0.10275852605200166" green="0.25931980298913049" blue="0.24554297064634878" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.1027585261" green="0.25931980300000002" blue="0.24554297059999999" alpha="0.67000000000000004" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rain?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnS-lA-SuX">
                                 <rect key="frame" x="244" y="486" width="36" height="17"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <color key="textColor" red="0.1027585261" green="0.25931980300000002" blue="0.24554297059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.1027585261" green="0.25931980300000002" blue="0.24554297059999999" alpha="0.67000000000000004" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.88" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgV-02-Oqx">
@@ -50,7 +50,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="At 5:18 AM it is:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeN-XW-0ZX">
                                 <rect key="frame" x="111" y="174" width="100" height="17"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <color key="textColor" red="0.1027585261" green="0.25931980300000002" blue="0.24554297059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.1027585261" green="0.25931980300000002" blue="0.24554297059999999" alpha="0.67000000000000004" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.70" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OX-X9-VsG">
@@ -84,15 +84,24 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="y3x-ew-QLS">
                                 <rect key="frame" x="149" y="408" width="20" height="20"/>
                             </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="degree" translatesAutoresizingMaskIntoConstraints="NO" id="swb-Q4-bFA">
+                                <rect key="frame" x="211" y="205" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="S15-02-mU2"/>
+                                    <constraint firstAttribute="width" constant="16" id="SIK-s4-5Qa"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.66226155492490424" green="0.69202407525510212" blue="0.65512053806086501" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="Paf-Aw-w4o" secondAttribute="centerX" constant="-26.5" id="2qt-S1-D2I"/>
+                            <constraint firstItem="m9O-h5-BtO" firstAttribute="top" secondItem="swb-Q4-bFA" secondAttribute="bottom" constant="-22" id="4iD-DB-Ixy"/>
                             <constraint firstItem="aRa-Ns-FWP" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="19" id="Ha9-TV-s4M"/>
                             <constraint firstItem="Jpt-yE-Fvq" firstAttribute="centerY" secondItem="y3x-ew-QLS" secondAttribute="centerY" constant="-0.5" id="LPL-qS-qEj"/>
                             <constraint firstAttribute="centerX" secondItem="UeN-XW-0ZX" secondAttribute="centerX" constant="-1" id="MXc-OV-TpG"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="xnS-lA-SuX" secondAttribute="bottom" constant="65" id="TYU-V7-mJv"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="TgV-02-Oqx" secondAttribute="bottom" constant="33" id="UA5-03-Pbq"/>
+                            <constraint firstItem="swb-Q4-bFA" firstAttribute="leading" secondItem="m9O-h5-BtO" secondAttribute="trailing" constant="-1" id="UMm-g9-MOP"/>
                             <constraint firstItem="Jpt-yE-Fvq" firstAttribute="top" secondItem="MEb-vb-Qek" secondAttribute="bottom" constant="64" id="YgD-sj-8Yx"/>
                             <constraint firstAttribute="centerX" secondItem="Jpt-yE-Fvq" secondAttribute="centerX" constant="0.5" id="Zvd-vc-jhJ"/>
                             <constraint firstAttribute="centerX" secondItem="MEb-vb-Qek" secondAttribute="centerX" constant="-0.5" id="Zwz-RF-cTD"/>
@@ -124,11 +133,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74.133333333333326" y="128.74666666666667"/>
+            <point key="canvasLocation" x="74" y="128"/>
         </scene>
     </scenes>
     <resources>
         <image name="cloudy-night" width="46" height="43"/>
+        <image name="degree" width="36" height="36"/>
         <image name="refresh" width="43" height="43"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
